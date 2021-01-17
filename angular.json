@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sales-management"
+    }
+  },
+  "defaultProject": "sales-management",
+  "cli": {
+    "analytics": "84614e03-c2a8-4eb8-87c6-f3f704b42c84"
+  }
 }
