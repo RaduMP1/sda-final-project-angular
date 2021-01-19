@@ -1,0 +1,21 @@
+<h2>Supplier Contact</h2>
+<table class = "table table-success table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let supplierContact of supplierContacts">
+            <td>{{ supplierContact.firstName }}</td>
+            <td>{{ supplierContact.lastName }}</td>
+            <td>{{ supplierContact.phone }}</td>
+            <td>{{ supplierContact.email }}</td>
+            <td>{{ supplierContact.department }}</td>
+        </tr>
+    </tbody>
+</table>

@@ -8,6 +8,8 @@ import { SalesListComponent } from './sales-list/sales-list.component';
 import { ProductsComponent } from './products/products.component';
 import { ClientsComponent } from './clients/clients.component';
 import { SuppliersComponent } from './suppliers/suppliers.component';
+import { ClientContactComponent } from './client-contact/client-contact.component';
+import { SupplierContactComponent } from './supplier-contact/supplier-contact.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SuppliersComponent } from './suppliers/suppliers.component';
     SalesListComponent,
     ProductsComponent,
     ClientsComponent,
-    SuppliersComponent
+    SuppliersComponent,
+    ClientContactComponent,
+    SupplierContactComponent
   ],
   imports: [
     BrowserModule,
