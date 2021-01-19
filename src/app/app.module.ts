@@ -16,6 +16,7 @@ import { AddClientComponent } from './add-client/add-client.component';
 import { AddClientContactComponent } from './add-client-contact/add-client-contact.component';
 import { AddSupplierComponent } from './add-supplier/add-supplier.component';
 import { AddSupplierContactComponent } from './add-supplier-contact/add-supplier-contact.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AddSupplierContactComponent } from './add-supplier-contact/add-supplier
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

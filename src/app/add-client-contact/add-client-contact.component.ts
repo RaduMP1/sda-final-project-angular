@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClientContact } from '../client-contact';
 
 @Component({
   selector: 'app-add-client-contact',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddClientContactComponent implements OnInit {
 
+  clientContact: ClientContact = new ClientContact();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    console.log(this.clientContact);
   }
 
 }
