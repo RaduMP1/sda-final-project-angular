@@ -10,6 +10,12 @@ import { ClientsComponent } from './clients/clients.component';
 import { SuppliersComponent } from './suppliers/suppliers.component';
 import { ClientContactComponent } from './client-contact/client-contact.component';
 import { SupplierContactComponent } from './supplier-contact/supplier-contact.component';
+import { AddSaleComponent } from './add-sale/add-sale.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { AddClientComponent } from './add-client/add-client.component';
+import { AddClientContactComponent } from './add-client-contact/add-client-contact.component';
+import { AddSupplierComponent } from './add-supplier/add-supplier.component';
+import { AddSupplierContactComponent } from './add-supplier-contact/add-supplier-contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { SupplierContactComponent } from './supplier-contact/supplier-contact.co
     ClientsComponent,
     SuppliersComponent,
     ClientContactComponent,
-    SupplierContactComponent
+    SupplierContactComponent,
+    AddSaleComponent,
+    AddProductComponent,
+    AddClientComponent,
+    AddClientContactComponent,
+    AddSupplierComponent,
+    AddSupplierContactComponent
   ],
   imports: [
     BrowserModule,
