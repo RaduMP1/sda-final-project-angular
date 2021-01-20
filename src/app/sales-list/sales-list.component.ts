@@ -29,4 +29,11 @@ export class SalesListComponent implements OnInit {
     this.router.navigate(['update-sale', id]);
   }
 
+  deleteSale(id: number){
+    this.saleService.deleteSale(id).subscribe( data => {
+      console.log(data);
+      this.getSales();
+    })
+  }
+
 }

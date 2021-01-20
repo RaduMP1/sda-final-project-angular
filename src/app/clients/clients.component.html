@@ -17,6 +17,7 @@
             <td>{{ client.email }}</td>
             <td>
                 <button (click) = "updateClient(client.id)" class = "btn btn-info">Update</button>
+                <button (click) = "deleteClient(client.id)" class = "btn btn-danger" style = "margin-left: 10px"> Delete </button>
             </td>
         </tr>
     </tbody>

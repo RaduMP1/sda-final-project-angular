@@ -29,4 +29,11 @@ export class SuppliersComponent implements OnInit {
     this.router.navigate(['update-supplier', id]);
   }
 
+  deleteSupplier(id: number){
+    this.supplierService.deleteSupplier(id).subscribe( data => {
+      console.log(data);
+      this.getSuppliers();
+    })
+  }
+
 }

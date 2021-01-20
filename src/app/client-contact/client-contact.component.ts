@@ -29,4 +29,11 @@ export class ClientContactComponent implements OnInit {
     this.router.navigate(['update-client-contact', id]);
   }
 
+  deleteClientContact(id: number){
+    this.clientContactService.deleteClientContact(id).subscribe( data => {
+      console.log(data);
+      this.getClientContacts();
+    })
+  }
+
 }
