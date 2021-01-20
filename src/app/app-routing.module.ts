@@ -12,6 +12,8 @@ import { AddClientComponent } from './add-client/add-client.component';
 import { AddClientContactComponent } from './add-client-contact/add-client-contact.component';
 import { AddSupplierComponent } from './add-supplier/add-supplier.component';
 import { AddSupplierContactComponent } from './add-supplier-contact/add-supplier-contact.component';
+import { UpdateSaleComponent } from './update-sale/update-sale.component';
+import { UpdateProductComponent } from './update-product/update-product.component';
 
 const routes: Routes = [
   {path: 'sales', component: SalesListComponent},
@@ -26,6 +28,8 @@ const routes: Routes = [
   {path: 'addclientcontact', component: AddClientContactComponent},
   {path: 'addsupplier', component: AddSupplierComponent},
   {path: 'addsuppliercontact', component: AddSupplierContactComponent},
+  {path: 'update-sale/:id', component: UpdateSaleComponent},
+  {path: 'update-product/:id', component: UpdateProductComponent},
   {path: '', redirectTo: 'sales', pathMatch: 'full'}
 ];
 

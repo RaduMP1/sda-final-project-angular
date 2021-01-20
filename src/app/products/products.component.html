@@ -4,12 +4,16 @@
         <tr>
             <th>Product Name</th>
             <th>Category</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor = "let product of products">
             <td>{{ product.productName }}</td>
             <td>{{ product.category }}</td>
+            <td>
+                <button (click) = "updateProduct(product.id)" class = "btn btn-info">Update</button>
+            </td>
         </tr>
     </tbody>
 </table>

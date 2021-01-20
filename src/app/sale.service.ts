@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Sale } from './sale';
 
@@ -18,6 +18,18 @@ export class SaleService {
 
   createSale(sale: Sale): Observable<Object>{
     return this.httpClient.post(`${this.baseURL}`, sale);
+  }
+
+  getSaleById(id: number): Observable<Sale>{
+    return this.httpClient.get<Sale>(`${this.baseURL}/${id}`);
+  }
+
+  updateSale(id: number, sale: Sale): Observable<Object>{
+    return this.httpClient.put(`${this.baseURL}/${id}`, sale);
+  }
+
+  deleteSale(id: number): Observable<Object>{
+    return this.httpClient.delete(`${this.baseURL}/${id}`);
   }
   
 }

@@ -16,7 +16,9 @@ import { AddClientComponent } from './add-client/add-client.component';
 import { AddClientContactComponent } from './add-client-contact/add-client-contact.component';
 import { AddSupplierComponent } from './add-supplier/add-supplier.component';
 import { AddSupplierContactComponent } from './add-supplier-contact/add-supplier-contact.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { UpdateSaleComponent } from './update-sale/update-sale.component';
+import { UpdateProductComponent } from './update-product/update-product.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { FormsModule } from '@angular/forms'
     AddClientComponent,
     AddClientContactComponent,
     AddSupplierComponent,
-    AddSupplierContactComponent
+    AddSupplierContactComponent,
+    UpdateSaleComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,

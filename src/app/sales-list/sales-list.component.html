@@ -6,6 +6,7 @@
             <th>Sales Data</th>
             <th>Status</th>
             <th>Observation</th>
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
@@ -14,6 +15,9 @@
             <td> {{ sale.salesData | date: 'yyyy-MM-dd' }} </td>
             <td> {{ sale.status }} </td>
             <td> {{ sale.observation }} </td>
+            <td>
+                <button (click) = "updateSale(sale.id)" class = "btn btn-info"> Update </button>
+            </td>
         </tr>
     </tbody>
 </table>

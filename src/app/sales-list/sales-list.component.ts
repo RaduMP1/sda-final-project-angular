@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Sale } from '../sale'
+import { Router } from '@angular/router';
+import { Sale } from '../sale';
 import { SaleService } from '../sale.service'
 
 @Component({
@@ -11,7 +12,8 @@ export class SalesListComponent implements OnInit {
 
   sales: Sale[];
 
-  constructor(private saleService: SaleService) { }
+  constructor(private saleService: SaleService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.getSales();
@@ -21,6 +23,10 @@ export class SalesListComponent implements OnInit {
     this.saleService.getSalesList().subscribe(data => {
       this.sales = data;
     });
+  }
+
+  updateSale(id: number){
+    this.router.navigate(['update-sale', id]);
   }
 
 }
