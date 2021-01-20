@@ -18,7 +18,9 @@ import { AddSupplierComponent } from './add-supplier/add-supplier.component';
 import { AddSupplierContactComponent } from './add-supplier-contact/add-supplier-contact.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateSaleComponent } from './update-sale/update-sale.component';
-import { UpdateProductComponent } from './update-product/update-product.component'
+import { UpdateProductComponent } from './update-product/update-product.component';
+import { UpdateClientComponent } from './update-client/update-client.component';
+import { UpdateClientContactComponent } from './update-client-contact/update-client-contact.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { UpdateProductComponent } from './update-product/update-product.componen
     AddSupplierComponent,
     AddSupplierContactComponent,
     UpdateSaleComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    UpdateClientComponent,
+    UpdateClientContactComponent
   ],
   imports: [
     BrowserModule,

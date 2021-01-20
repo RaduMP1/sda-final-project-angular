@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ClientContact } from '../client-contact'
-import { ClientContactService } from '../client-contact.service'
+import { Router } from '@angular/router';
+import { ClientContact } from '../client-contact';
+import { ClientContactService } from '../client-contact.service';
 
 @Component({
   selector: 'app-client-contact',
@@ -11,7 +12,8 @@ export class ClientContactComponent implements OnInit {
 
   clientContacts: ClientContact[];
 
-  constructor(private clientContactService: ClientContactService) { }
+  constructor(private clientContactService: ClientContactService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.getClientContacts();
@@ -21,6 +23,10 @@ export class ClientContactComponent implements OnInit {
     this.clientContactService.getClientContactsList().subscribe(data => {
       this.clientContacts = data;
     });
+  }
+
+  updateClientContact(id: number){
+    this.router.navigate(['update-client-contact', id]);
   }
 
 }
