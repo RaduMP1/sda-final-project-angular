@@ -15,4 +15,8 @@ export class ClientContactService {
   getClientContactsList(): Observable<ClientContact[]>{
     return this.httpClient.get<ClientContact[]>(`${this.baseURL}`);
   }
+
+  createClientContact(clientContact: ClientContact): Observable<Object>{
+    return this.httpClient.post(`${this.baseURL}`, clientContact);
+  }
 }

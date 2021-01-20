@@ -15,4 +15,8 @@ export class SupplierService {
   getSuppliersList(): Observable<Supplier[]>{
     return this.httpClient.get<Supplier[]>(`${this.baseURL}`);
   }
+
+  createSupplier(supplier: Supplier): Observable<Object>{
+    return this.httpClient.post(`${this.baseURL}`, supplier);
+  }
 }

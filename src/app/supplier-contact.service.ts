@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SupplierContact } from './supplier-contact'
+import { SupplierService } from './supplier.service';
 
 @Injectable({
   providedIn: 'root'
@@ -14,5 +15,9 @@ export class SupplierContactService {
 
   getSupplierContactsList(): Observable<SupplierContact[]>{
     return this.httpClient.get<SupplierContact[]>(`${this.baseURL}`);
+  }
+
+  createSupplierContact(supplierContact: SupplierContact): Observable<Object>{
+    return this.httpClient.post(`${this.baseURL}`, supplierContact);
   }
 }

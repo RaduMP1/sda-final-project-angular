@@ -15,4 +15,9 @@ export class SaleService {
   getSalesList(): Observable<Sale[]>{
     return this.httpClient.get<Sale[]>(`${this.baseURL}`);
   }
+
+  createSale(sale: Sale): Observable<Object>{
+    return this.httpClient.post(`${this.baseURL}`, sale);
+  }
+  
 }

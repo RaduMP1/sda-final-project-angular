@@ -11,7 +11,7 @@
     <tbody>
         <tr *ngFor = "let sale of sales" >
             <td> {{ sale.salesName }} </td>
-            <td> {{ sale.salesData | date: 'dd/MM/yyyy' }} </td>
+            <td> {{ sale.salesData | date: 'yyyy-MM-dd' }} </td>
             <td> {{ sale.status }} </td>
             <td> {{ sale.observation }} </td>
         </tr>
