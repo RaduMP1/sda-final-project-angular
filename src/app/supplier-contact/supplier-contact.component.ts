@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { SupplierContact } from '../supplier-contact'
-import { SupplierContactService } from '../supplier-contact.service'
+import { Router } from '@angular/router';
+import { SupplierContact } from '../supplier-contact';
+import { SupplierContactService } from '../supplier-contact.service';
 
 @Component({
   selector: 'app-supplier-contact',
@@ -11,7 +12,8 @@ export class SupplierContactComponent implements OnInit {
 
   supplierContacts: SupplierContact[];
 
-  constructor(private supplierContactService: SupplierContactService) { }
+  constructor(private supplierContactService: SupplierContactService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.getSupplierContacts();
@@ -21,6 +23,10 @@ export class SupplierContactComponent implements OnInit {
     this.supplierContactService.getSupplierContactsList().subscribe(data => {
       this.supplierContacts = data;
     });
+  }
+
+  updateSupplierContact(id: number){
+    this.router.navigate(['update-supplier-contact', id]);
   }
 
 }

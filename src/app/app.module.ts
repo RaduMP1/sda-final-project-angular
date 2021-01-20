@@ -20,7 +20,8 @@ import { FormsModule } from '@angular/forms';
 import { UpdateSaleComponent } from './update-sale/update-sale.component';
 import { UpdateProductComponent } from './update-product/update-product.component';
 import { UpdateClientComponent } from './update-client/update-client.component';
-import { UpdateClientContactComponent } from './update-client-contact/update-client-contact.component'
+import { UpdateClientContactComponent } from './update-client-contact/update-client-contact.component';
+import { UpdateSupplierContactComponent } from './update-supplier-contact/update-supplier-contact.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { UpdateClientContactComponent } from './update-client-contact/update-cli
     UpdateSaleComponent,
     UpdateProductComponent,
     UpdateClientComponent,
-    UpdateClientContactComponent
+    UpdateClientContactComponent,
+    UpdateSupplierContactComponent
   ],
   imports: [
     BrowserModule,
