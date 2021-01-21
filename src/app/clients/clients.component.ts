@@ -25,6 +25,10 @@ export class ClientsComponent implements OnInit {
     });
   }
 
+  clientDetails(id: number){
+    this.router.navigate(['client-details', id]);
+  }
+
   updateClient(id: number){
     this.router.navigate(['update-client', id]);
   }

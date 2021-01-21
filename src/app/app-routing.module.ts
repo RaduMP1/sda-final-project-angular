@@ -18,6 +18,12 @@ import { UpdateClientComponent } from './update-client/update-client.component';
 import { UpdateClientContactComponent } from './update-client-contact/update-client-contact.component';
 import { UpdateSupplierContactComponent } from './update-supplier-contact/update-supplier-contact.component';
 import { UpdateSupplierComponent } from './update-supplier/update-supplier.component';
+import { SaleDetailsComponent } from './sale-details/sale-details.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ClientDetailsComponent } from './client-details/client-details.component';
+import { SupplierDetailsComponent } from './supplier-details/supplier-details.component';
+import { ClientContactDetailsComponent } from './client-contact-details/client-contact-details.component';
+import { SupplierContactDetailsComponent } from './supplier-contact-details/supplier-contact-details.component';
 
 const routes: Routes = [
   {path: 'sales', component: SalesListComponent},
@@ -38,6 +44,12 @@ const routes: Routes = [
   {path: 'update-client-contact/:id', component: UpdateClientContactComponent},
   {path: 'update-supplier-contact/:id', component: UpdateSupplierContactComponent},
   {path: 'update-supplier/:id', component: UpdateSupplierComponent},
+  {path: 'sale-details/:id', component: SaleDetailsComponent},
+  {path: 'product-details/:id', component: ProductDetailsComponent},
+  {path: 'client-details/:id', component: ClientDetailsComponent},
+  {path: 'supplier-details/:id', component: SupplierDetailsComponent},
+  {path: 'client-contact-details/:id', component: ClientContactDetailsComponent},
+  {path: 'supplier-contact-details/:id', component: SupplierContactDetailsComponent},
   {path: '', redirectTo: 'sales', pathMatch: 'full'}
 ];
 

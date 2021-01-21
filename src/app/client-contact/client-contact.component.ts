@@ -25,6 +25,10 @@ export class ClientContactComponent implements OnInit {
     });
   }
 
+  clientContactDetails(id: number){
+    this.router.navigate(['client-contact-details', id]);
+  }
+
   updateClientContact(id: number){
     this.router.navigate(['update-client-contact', id]);
   }

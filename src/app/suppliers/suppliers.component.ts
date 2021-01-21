@@ -25,6 +25,10 @@ export class SuppliersComponent implements OnInit {
     });
   }
 
+  supplierDetails(id: number){
+    this.router.navigate(['supplier-details', id]);
+  }
+
   updateSupplier(id: number){
     this.router.navigate(['update-supplier', id]);
   }

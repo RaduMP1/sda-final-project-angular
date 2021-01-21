@@ -25,6 +25,10 @@ export class SalesListComponent implements OnInit {
     });
   }
 
+  saleDetails(id: number){
+    this.router.navigate(['sale-details', id]);
+  }
+
   updateSale(id: number){
     this.router.navigate(['update-sale', id]);
   }
