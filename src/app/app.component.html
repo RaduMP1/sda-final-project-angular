@@ -8,47 +8,49 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- <nav class="navbar navbar-expand-sm bg-primary navbar-dark"> -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../assets/images/sales_management.jpg" alt="" width="30" height="24">SalesManagement
-      </a>
-  <ul class = "navbar-nav">
-    <li class = "nav-item">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/images/sales_management.jpg" alt="" width="30" height="24">SalesManagement
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
         <a routerLink="sales" routerLinkActive="active" class="nav-link">Sales List</a>
         <a routerLink="addsale" routerLinkActive="active" class="nav-link">Add Sale</a>
-    </li>
-    <li class = "nav-item">
-      <a routerLink="products" routerLinkActive="active" class="nav-link">Products</a>
-      <a routerLink="addproduct" routerLinkActive="active" class="nav-link">Add Prod</a>
-    </li>
-    <li class = "nav-item">
-      <a routerLink="clients" routerLinkActive="active" class="nav-link">Clients</a>
-      <a routerLink="addclient" routerLinkActive="active" class="nav-link">Add Cl</a>
-    </li>
-    <li>
-      <a routerLink="clientcontacts" routerLinkActive="active" class="nav-link">Client Contacts</a>
-      <a routerLink="addclientcontact" routerLinkActive="active" class="nav-link"> Add Cl Cont</a>
-    </li>
-    <li class = "nav-item">
-      <a routerLink="suppliers" routerLinkActive="active" class="nav-link">Suppliers</a>
-      <a routerLink="addsupplier" routerLinkActive="active" class="nav-link">Add Suppl</a>
-    </li>
-    <li>
-      <a routerLink="suppliercontacts" routerLinkActive="active" class="nav-link">Supplier Contacts</a>
-      <a routerLink="addsuppliercontact" routerLinkActive="active" class="nav-link">Add Suppl Cont</a>
-    </li>
-  </ul>
-</div>
+      </li>
+      <li class="nav-item">
+        <a routerLink="products" routerLinkActive="active" class="nav-link">Products</a>
+        <a routerLink="addproduct" routerLinkActive="active" class="nav-link">Add Prod</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="clients" routerLinkActive="active" class="nav-link">Clients</a>
+        <a routerLink="addclient" routerLinkActive="active" class="nav-link">Add Cl</a>
+      </li>
+      <li>
+        <a routerLink="clientcontacts" routerLinkActive="active" class="nav-link">Client Contacts</a>
+        <a routerLink="addclientcontact" routerLinkActive="active" class="nav-link"> Add Cl Cont</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="suppliers" routerLinkActive="active" class="nav-link">Suppliers</a>
+        <a routerLink="addsupplier" routerLinkActive="active" class="nav-link">Add Suppl</a>
+      </li>
+      <li>
+        <a routerLink="suppliercontacts" routerLinkActive="active" class="nav-link">Supplier Contacts</a>
+        <a routerLink="addsuppliercontact" routerLinkActive="active" class="nav-link">Add Suppl Cont</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 <!-- </nav> -->
 
 <h1 class="text-center"> {{title}} </h1>
-<div class = "container">
+<div class="container">
   <router-outlet></router-outlet>
 </div>
-<footer class = "footer">
-  <div class = "container">
-    <span><h4>JavaTimi8 Final Project</h4></span>
+<footer class="footer">
+  <div class="container">
+    <span>
+      <h4>JavaTimi8 Final Project</h4>
+    </span>
   </div>
 </footer>
